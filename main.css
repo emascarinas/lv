@@ -3,7 +3,8 @@ body {
 	padding: 0;
 }
 #home{
-	/*text-align: center;*/
+	padding-top: 86px;
+	text-align: center;
 	background-color: #000;
 }
 #home img {
