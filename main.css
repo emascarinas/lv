@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#home{
+	/*text-align: center;*/
+	background-color: #000;
+}
+#page2 {
+	display: none;
+}
+
+.redbutton {
+	background-color: #c60b2b;
+	
+}
