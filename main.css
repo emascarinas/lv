@@ -11,6 +11,10 @@ body {
 	display: block;
 	margin: 0 auto;
 }
+#home button {
+	border: none;
+	color: #fff;
+}
 #page2 {
 	display: none;
 }
