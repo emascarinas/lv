@@ -67,5 +67,54 @@ body {
 	background: lightgray;
 }
 
+.social-1-off {
+	background: url(images/social_1.jpg) no-repeat;
+	background-size: 75px 78px;
+	width: 75px;
+	height: 78px;
+} 
+.social-1-on {
+	background: url(images/social_1_on.jpg) no-repeat;
+	background-size: 75px 78px;
+	width: 75px;
+	height: 78px;
+} 
+.social-2-off {
+	background: url(images/social_2.jpg) no-repeat;
+	background-size: 75px 78px;
+	width: 75px;
+	height: 78px;
+} 
+.social-2-on {
+	background: url(images/social_2_on.jpg) no-repeat;
+	background-size: 75px 78px;
+	width: 75px;
+	height: 78px;
+} 
+.social-3-off {
+	background: url(images/social_3.jpg) no-repeat;
+	background-size: 75px 78px;
+	width: 75px;
+	height: 78px;
+} 
+.social-3-on {
+	background: url(images/social_3_on.jpg) no-repeat;
+	background-size: 75px 78px;
+	width: 75px;
+	height: 78px;
+} 
+.social-4-off {
+	background: url(images/social_4.jpg) no-repeat;
+	background-size: 75px 78px;
+	width: 75px;
+	height: 78px;
+} 
+.social-4-on {
+	background: url(images/social_4_on.jpg) no-repeat;
+	background-size: 75px 78px;
+	width: 75px;
+	height: 78px;
+} 
+
 
 
