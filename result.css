@@ -10,6 +10,10 @@ body {
 }
 #result {
 	margin-top: 15px;
+	background: url(images/type_bg.png) no-repeat;
+	background-size: 375px 380px;
+	background-position-y: 480px;
+	height: 1731px;
 }
 .logo-white {
 	padding-bottom: 15px;
@@ -59,12 +63,16 @@ body {
 	background-image: url(images/next.png)!important;
 	background-size: 41px 60px!important;
 }
+.sticky-pants {
+	margin-left: 21px;
+
+}
 #type {
-	background: url(images/type_bg.png) no-repeat;
-	background-size: 375px 380px;
-	background-position-y: 351px;
-	height: 731px;
+	margin-bottom: 70px;
 }
 .type-label {
 	text-align: center;
+}
+#color {
+	
 }
