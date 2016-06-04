@@ -44,6 +44,7 @@ body {
 	padding: 10px 0 10px 32px;
 	margin: 14px 0 0 47px;
 }
+/*pants slider******************************************/
 .swiper-container {
 	width: 375px;
 	height: 400px;
@@ -65,7 +66,9 @@ body {
 }
 .sticky-pants {
 	margin-left: 21px;
-
+}
+.sticky-pants img {
+	margin-top: 20px;
 }
 #type {
 	margin-bottom: 70px;
@@ -73,6 +76,13 @@ body {
 .type-label {
 	text-align: center;
 }
+
+/*pants color******************************************/
 #color {
-	
+	margin: 120px 23px 0;
 }
+#color h3 {
+	text-align: right;
+}
+
+/*pants distress******************************************/

@@ -15,4 +15,7 @@ $(function() {
 });
 	$(".sticky-pants").stick_in_parent();
 
+
+
 });
+

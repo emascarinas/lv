@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="initial-scale=1.0">
+	<link href="rangeslider.css" rel="stylesheet" type="text/css">
 	<link href="result.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
 </head>
@@ -33,7 +34,15 @@
 			<div class="type-label">501 Straight 1</div>
 		</div>
 		<div class="sticky-pants"><img src="images/sticky.png" width="75"></div>
-		<div id="color">color</div>
+		<div id="color">
+			<h3>DENIM COLOR</h3>
+			<h4>BRIGHTNESS</h4>
+			<div class="range">
+				<input id="slider2" type ="range" min ="100" max="500" step ="50" value ="100"/>
+			</div>
+			<h4>FADE</h4>
+
+		</div>
 		<div id="distress">distress</div>
 		<div id="thread">thread</div>
 	</div>
@@ -43,6 +52,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
 	<script type="text/javascript" src="sticky-kit.min.js"></script>
+	<script type="text/javascript" src="rangeslider.min.js"></script>
 	<script type="text/javascript" src="result.js"></script>
 </body>
 </html>
