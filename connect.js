@@ -5,7 +5,7 @@ var social_arr = [];
 var rate_arr = [
 ["EXCELENT",7],
 ["GOOD",5],
-["GOOD",5],
+["OKAY",3],
 ["POOR",1]
 ];
 console.log(rate_arr);
@@ -27,6 +27,10 @@ $('.social li').on('click',function(event){
 	else {
 		$(this).removeClass(classOff).addClass(classOn);
 	}
+});
+
+$('.analyzebutton').on("click",function(){
+	window.location.href = "result.html";	
 });
 function initSocial(){
 	$( ".social li" ).each(function( index ) {
