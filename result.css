@@ -42,8 +42,23 @@ body {
 }
 .swiper-container {
 	width: 375px;
-	height: 387px;
+	height: 400px;
 } 
 .swiper-slide {
+	text-align: center;
+}
+.swiper-button-prev {
+	height: 60px!important;
+	width: 41px!important;
+	background-image: url(images/prev.png)!important;
+	background-size: 41px 60px!important;
+}
+.swiper-button-next {
+	height: 60px!important;
+	width: 41px!important;
+	background-image: url(images/next.png)!important;
+	background-size: 41px 60px!important;
+}
+.type-label {
 	text-align: center;
 }
