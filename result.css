@@ -59,6 +59,12 @@ body {
 	background-image: url(images/next.png)!important;
 	background-size: 41px 60px!important;
 }
+#type {
+	background: url(images/type_bg.png) no-repeat;
+	background-size: 375px 380px;
+	background-position-y: 351px;
+	height: 731px;
+}
 .type-label {
 	text-align: center;
 }
