@@ -163,28 +163,23 @@ body {
 
 /*pants thread******************************************/
 #thread {
+	position: relative;
+}
+#thread .col1 {
+	float: left;
+	width: 253px;
+}
+#thread .col2 {
+	position: relative;
+	float: left;
+	width: 122px;
+	background: url(images/thread_right.png) no-repeat;
+	background-size: 122px 434px;
 	height: 440px;
-	background: url(images/thread_1.png) 0px 0px no-repeat;
-	background-size: 375px 434px;
-	position: relative;
 }
-#thread h3 {
-	text-align: right;
-	color: #fff;
-	padding: 71px 23px 0 0;
-}
-#thread .color {
-	height: 255px;
-	width: 29px;
-	background: url(images/color.png) no-repeat;
-	background-size: 29px 255px;
-	margin-left: 300px;
-	position: relative;
-}
-
 #js-rangeslider-2 {
-	top: 4px;
-	left: -6px;
+    top: 129px;
+    left: 35px;
 	position: absolute;
 	min-height: 245px;
 }

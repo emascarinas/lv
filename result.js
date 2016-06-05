@@ -14,6 +14,11 @@ var mySwiper = new Swiper ('.swiper-container', {
     	$('.type-label').text(typeLabel[index]);
     },
 });
+var swiperThread = new Swiper ('.swiper-container-thread', {
+    // Optional parameters
+    loop: true,
+    effect: 'fade',
+});
 
 // sticky pants
 $(".sticky-pants").stick_in_parent();
@@ -66,6 +71,20 @@ $(".swipe-area").swipe( {
 	}
 });
 
+//color thread
+$('#range-bright').rangeslider({polyfill: false}).on('input', function() {
+	console.log(this.value);
+});
+$('#range-fade').rangeslider({polyfill: false}).on('input', function() {
+	console.log(this.value);
+});
+$('#range-thread').rangeslider({polyfill: false}).on('input', function() {
+	console.log(this.value);
+	swiperThread.slideNext();
+});
+
+
+
 });
 
 function needleSwap(index){
@@ -91,14 +110,5 @@ function addCutterClass(index){
 	$('.scratch-area').addClass('cutter-' + index);
 }
 
-//color thread
-$('#range-bright').rangeslider({polyfill: false}).on('input', function() {
-	console.log(this.value);
-});
-$('#range-fade').rangeslider({polyfill: false}).on('input', function() {
-	console.log(this.value);
-});
-$('#range-thread').rangeslider({polyfill: false}).on('input', function() {
-	console.log(this.value);
-});
+
 
