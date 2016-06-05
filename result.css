@@ -152,8 +152,8 @@ input[type=range]::-webkit-slider-thumb {
 /*pants thread******************************************/
 #thread {
 	height: 440px;
-	background: url(images/thread_1.png) 1px 0px no-repeat;
-	background-size: 374px 434px;
+	background: url(images/thread_1.png) 0px 0px no-repeat;
+	background-size: 375px 434px;
 }
 #thread h3 {
 	text-align: right;
