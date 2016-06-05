@@ -25,7 +25,7 @@ var swiperColor = new Swiper ('.swiper-container-color', {
 });
 
 // sticky pants
-$(".sticky-pants").stick_in_parent();
+$(".sticky-pants").stick_in_parent({parent: '#result'});
 
 // range sliders
 // $("#slider-bright").on("change", function(){

@@ -63,6 +63,7 @@ body {
 .sticky-pants {
 	margin-left: 21px;
 	z-index: 10;
+	position: absolute;
 
 }
 .sticky-pants img {
@@ -114,7 +115,9 @@ body {
 	width: 30px;
 	border: none;
 }
-
+.swiper-container-color {
+	margin-top: -54px;
+}
 
 
 
