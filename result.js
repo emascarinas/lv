@@ -40,7 +40,7 @@ $('.cutter').on('click',function(){
 	cutterIndex = 0;
 });
 
-$(".scratch-area").swipe( {
+$(".swipe-area").swipe( {
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
     	if(direction == 'right') {
     		if(isNeedle && needleIndex > 1){
