@@ -152,7 +152,7 @@ input[type=range]::-webkit-slider-thumb {
 /*pants thread******************************************/
 #thread {
 	height: 440px;
-	background: url(images/thread_1.png) no-repeat;
+	background: url(images/thread_1.png) 1px 0px no-repeat;
 	background-size: 374px 434px;
 }
 #thread h3 {
