@@ -2,22 +2,77 @@
 <html>
 <head>
 	<meta name="viewport" content="initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+	<link rel="stylesheet" href="http://andreruffert.github.io/rangeslider.js/assets/rangeslider.js/dist/rangeslider.css">
+	<style type="text/css">
+	html,
+	body {
+		color: #404040;
+		height: 100%;
+		margin: 0;
+	}
+
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 20px;
+	}
+
+	h1 {
+		font-weight: 300;
+	}
+
+	.rangeslider,
+	input[type='range'] {
+		max-width: 400px;
+	}
+
+	.rangeslider__handle {
+		border-radius: 22px;
+		min-width: 62px;
+		line-height: 42px;
+		text-align: center;
+
+		&:after {
+			background: 0;
+		}
+	}
+	</style>
 </head>
 
 <body>
 	
-			<input type="range">
-			
+	<h1>rangeslider.js</h1>
+	<input type="range">
 
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-	<script type="text/javascript" src="sticky-kit.min.js"></script>
-	<script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
-	<script type="text/javascript" src="rangeslider.min.js"></script>
-	
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://andreruffert.github.io/rangeslider.js/assets/rangeslider.js/dist/rangeslider.min.js"></script>
+
+
+	<script>
+	var $element = $('input[type="range"]');
+	var $handle;
+
+	$element
+	.rangeslider({
+		polyfill: false,
+		onInit: function() {
+			$handle = $('.rangeslider__handle', this.$range);
+			updateHandle($handle[0], this.value);
+		}
+	})
+	.on('input', function() {
+		updateHandle($handle[0], this.value);
+	});
+
+	function updateHandle(el, val) {
+		el.textContent = val;
+	}
+
+	</script>
+
 </body>
 </html>
 
