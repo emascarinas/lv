@@ -14,7 +14,9 @@ $(function() {
     },
 });
 	$(".sticky-pants").stick_in_parent();
-
+	$("#slider-bright").on("change", function(){
+		console.log($(this).val());
+	});
 
 
 });
