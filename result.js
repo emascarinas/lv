@@ -23,6 +23,9 @@ $("#slider-bright").on("change", function(){
 	console.log($(this).val());
 });
 
+$('input[type="range"]').rangeslider();
+
+
 // distress
 var isNeedle = true;
 var needleIndex = 1;
