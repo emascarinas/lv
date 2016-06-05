@@ -137,8 +137,8 @@ input[type=range]::-webkit-slider-thumb {
 }
 .scratch-area {
 	height: 360px;
-	background: url(images/distress_1.png) no-repeat;
 	background-size: 325px 324px;
+	background-repeat: no-repeat;
 }
 .needle {
 	margin-top: 249px;
@@ -147,7 +147,21 @@ input[type=range]::-webkit-slider-thumb {
 .cutter {
 	margin-top: 249px;
 }
-
+.needle-1 {
+	background-image: url(images/distress_1.png);
+}
+.needle-2 {
+	background-image: url(images/distress_2.png);
+}
+.needle-3 {
+	background-image: url(images/distress_3.png);
+}
+.cutter-1 {
+	background-image: url(images/distress_4.png);
+}
+.cutter-2 {
+	background-image: url(images/distress_5.png);
+}
 
 /*pants thread******************************************/
 #thread {
