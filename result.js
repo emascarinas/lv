@@ -15,7 +15,11 @@ var mySwiper = new Swiper ('.swiper-container', {
     },
 });
 var swiperThread = new Swiper ('.swiper-container-thread', {
-    // Optional parameters
+    loop: true,
+    effect: 'fade',
+});
+
+var swiperColor = new Swiper ('.swiper-container-color', {
     loop: true,
     effect: 'fade',
 });
@@ -73,10 +77,10 @@ $(".swipe-area").swipe( {
 
 //color thread
 $('#range-bright').rangeslider({polyfill: false}).on('input', function() {
-	console.log(this.value);
+	swiperColor.slideNext();
 });
 $('#range-fade').rangeslider({polyfill: false}).on('input', function() {
-	console.log(this.value);
+	swiperColor.slidePrev();
 });
 $('#range-thread').rangeslider({polyfill: false}).on('input', function() {
 	console.log(this.value);
