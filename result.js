@@ -19,12 +19,9 @@ var mySwiper = new Swiper ('.swiper-container', {
 $(".sticky-pants").stick_in_parent();
 
 // range sliders
-$("#slider-bright").on("change", function(){
-	console.log($(this).val());
-});
-
-$('input[type="range"]').rangeslider();
-
+// $("#slider-bright").on("change", function(){
+// 	console.log($(this).val());
+// });
 
 // distress
 var isNeedle = true;
@@ -44,29 +41,29 @@ $('.cutter').on('click',function(){
 });
 
 $(".swipe-area").swipe( {
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-    	if(direction == 'right') {
-    		if(isNeedle && needleIndex > 1){
-    			needleIndex--;
-    			needleSwap(needleIndex);
-    		}
-    		if(!isNeedle && cutterIndex > 1){
-    			cutterIndex--;
-    			cutterSwap(cutterIndex);
-    		}
-    	}
-    	else {
-    		if(isNeedle && needleIndex < needleMax){
-    			needleIndex++;
-    			needleSwap(needleIndex);
-    		}
-    		if(!isNeedle && cutterIndex < cutterMax){
-    			cutterIndex++;
-    			cutterSwap(cutterIndex);
-    		}
-    	}
-    	
-    }
+	swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+		if(direction == 'right') {
+			if(isNeedle && needleIndex > 1){
+				needleIndex--;
+				needleSwap(needleIndex);
+			}
+			if(!isNeedle && cutterIndex > 1){
+				cutterIndex--;
+				cutterSwap(cutterIndex);
+			}
+		}
+		else {
+			if(isNeedle && needleIndex < needleMax){
+				needleIndex++;
+				needleSwap(needleIndex);
+			}
+			if(!isNeedle && cutterIndex < cutterMax){
+				cutterIndex++;
+				cutterSwap(cutterIndex);
+			}
+		}
+
+	}
 });
 
 });
@@ -93,3 +90,15 @@ function cutterSwap(index){
 function addCutterClass(index){
 	$('.scratch-area').addClass('cutter-' + index);
 }
+
+//color thread
+$('#range-bright').rangeslider({polyfill: false}).on('input', function() {
+	console.log(this.value);
+});
+$('#range-fade').rangeslider({polyfill: false}).on('input', function() {
+	console.log(this.value);
+});
+$('#range-thread').rangeslider({polyfill: false}).on('input', function() {
+	console.log(this.value);
+});
+

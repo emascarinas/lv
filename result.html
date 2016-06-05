@@ -47,7 +47,7 @@
 				<div class="rcircle"></div>
 				<div class="rcircle"></div>
 				<div class="rcircle"></div>
-				<input class="range-input" id="slider-bright" type ="range" min ="1" max="9" step ="1" value ="1"/>
+				<input id="range-bright" type="range" min ="1" max="9" step ="1" value ="1"/>
 			</div>
 			<h4>FADE</h4>
 			<div class="range">
@@ -60,7 +60,7 @@
 				<div class="rcircle"></div>
 				<div class="rcircle"></div>
 				<div class="rcircle"></div>
-				<input class="range-input" id="slider-fade" type ="range" min ="1" max="9" step ="1" value ="1"/>
+				<input id="range-fade" type="range" min ="1" max="9" step ="1" value ="1"/>
 			</div>
 			<hr class="red-line" >
 		</div>
@@ -75,9 +75,9 @@
 		</div>
 		<div id="thread">
 			<h3>THREAD</h3>
-			<input type="range">
+			
 			<div class="color">
-	
+				<input class="range-input" value="100" id="range-thread" type="range" data-orientation="vertical">
 			</div>
 		</div>
 	</div>
@@ -90,28 +90,6 @@
 	<script type="text/javascript" src="./lib/jquery.touchSwipe.min.js"></script>
 	<script type="text/javascript" src="./lib/rangeslider.min.js"></script>
 	<script type="text/javascript" src="result.js"></script>
-
-	<script>
-	var $element = $('input[type="range"]');
-	var $handle;
-
-	$element
-	.rangeslider({
-		polyfill: false,
-		onInit: function() {
-			$handle = $('.rangeslider__handle', this.$range);
-			updateHandle($handle[0], this.value);
-		}
-	})
-	.on('input', function() {
-		updateHandle($handle[0], this.value);
-	});
-
-	function updateHandle(el, val) {
-		el.textContent = val;
-	}
-
-	</script>
 </body>
 </html>
 
