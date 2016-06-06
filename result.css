@@ -3,6 +3,15 @@
 	background: initial!important;
 	box-shadow: none!important;
 }
+.submit-button {
+	padding: 23px 61px;
+	background-color: #c60b2b;
+	font-size: 17px;
+	margin-bottom: 48px;
+	border: none;
+	margin-top: 39px;
+	color: #fff;
+}
 
 @font-face {
 	font-family: 'MyWebFont';
@@ -46,6 +55,21 @@ body {
 	padding: 10px 0 10px 32px;
 	margin: 14px 0 0 47px;
 }
+/*header*/
+.head a {
+	text-decoration: none;
+	color: #000;
+	font-size: 13px;
+	position: absolute;
+	top: 22px;
+}
+.head img {
+	margin: 0 20px;
+}
+.head a:nth-child(1) {
+	left: 17px;
+}
+
 /*pants slider******************************************/
 .swiper-container {
 	width: 375px;
@@ -171,7 +195,7 @@ body {
 }
 .swiper-container-distress .controls {
 	position: absolute;
-	z-index: 10;
+	z-index: 9;
 	bottom: 1px;
 }
 .swiper-container-distress .needleB {

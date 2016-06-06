@@ -1,6 +1,12 @@
 
 $(function() {
 
+// head slider
+
+var swiper = new Swiper('.swiper-container-head', {
+        slidesPerView: 4
+    });
+
 //pants slider swiper
 var typeLabel = ['501 Straight 1','501 Straight 2','501 Straight 3','501 Straight 1'];
 var mySwiper = new Swiper ('.swiper-container', {
@@ -71,6 +77,26 @@ $(".swipe-area").swipe( {
 	}
 });
 
+var swiperDistress = new Swiper ('.swiper-container-distress', {
+	loop: true,
+	effect: 'fade',
+});
+$('.needleB').on('click',function(){
+	swiperDistress.removeAllSlides();
+	swiperDistress.prependSlide([
+		'<div class="swiper-slide"><img width="325" src="images/distress_1.png"></div>', 
+		'<div class="swiper-slide"><img width="325" src="images/distress_2.png"></div>',
+		'<div class="swiper-slide"><img width="325" src="images/distress_3.png"></div>'
+		]);
+});
+$('.cutterB').on('click',function(){
+	swiperDistress.removeAllSlides();
+	swiperDistress.prependSlide([
+		'<div class="swiper-slide"><img width="325" src="images/distress_4.png"></div>', 
+		'<div class="swiper-slide"><img width="325" src="images/distress_5.png"></div>'
+		]);
+});
+
 //color thread
 $('#range-bright').rangeslider({polyfill: false}).on('input', function() {
 	swiperColor.slideNext();
@@ -91,27 +117,6 @@ var swiperRevit = new Swiper ('.swiper-container-revit', {
 	effect: 'fade',
 });
 
-
-//distress swiper late
-var swiperDistress = new Swiper ('.swiper-container-distress', {
-	loop: true,
-	effect: 'fade',
-});
-$('.needleB').on('click',function(){
-	swiperDistress.removeAllSlides();
-	swiperDistress.prependSlide([
-		'<div class="swiper-slide"><img width="325" src="images/distress_1.png"></div>', 
-		'<div class="swiper-slide"><img width="325" src="images/distress_2.png"></div>',
-		'<div class="swiper-slide"><img width="325" src="images/distress_3.png"></div>'
-		]);
-});
-$('.cutterB').on('click',function(){
-	swiperDistress.removeAllSlides();
-	swiperDistress.prependSlide([
-		'<div class="swiper-slide"><img width="325" src="images/distress_4.png"></div>', 
-		'<div class="swiper-slide"><img width="325" src="images/distress_5.png"></div>'
-		]);
-});
 
 });
 
