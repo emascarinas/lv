@@ -69,6 +69,9 @@ body {
 .head a:nth-child(1) {
 	left: 17px;
 }
+.swiper-container-head{
+	width: 375px;
+}
 
 /*pants slider******************************************/
 .swiper-container {
