@@ -15,22 +15,17 @@ var mySwiper = new Swiper ('.swiper-container', {
     },
 });
 var swiperThread = new Swiper ('.swiper-container-thread', {
-    loop: true,
-    effect: 'fade',
+	loop: true,
+	effect: 'fade',
 });
 
 var swiperColor = new Swiper ('.swiper-container-color', {
-    loop: true,
-    effect: 'fade',
+	loop: true,
+	effect: 'fade',
 });
 
 // sticky pants
 $(".sticky-pants").stick_in_parent({parent: '#result'});
-
-// range sliders
-// $("#slider-bright").on("change", function(){
-// 	console.log($(this).val());
-// });
 
 // distress
 var isNeedle = true;
@@ -83,13 +78,28 @@ $('#range-fade').rangeslider({polyfill: false}).on('input', function() {
 	swiperColor.slidePrev();
 });
 $('#range-thread').rangeslider({polyfill: false}).on('input', function() {
-	console.log(this.value);
 	swiperThread.slideNext();
 });
 
+//pocket
+$('#range-pocket').rangeslider({polyfill: false}).on('input', function() {
+	console.log(this.value);
+});
+
+
 
 
 });
+
+
+
+
+
+
+
+
+
+//helper functions
 
 function needleSwap(index){
 	removeClass();
