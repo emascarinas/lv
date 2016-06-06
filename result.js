@@ -4,7 +4,8 @@ $(function() {
 // head slider
 
 var swiper = new Swiper('.swiper-container-head', {
-        slidesPerView: 4
+        slidesPerView: 4,
+        spaceBetween: 30
     });
 
 //pants slider swiper
