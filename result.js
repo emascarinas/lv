@@ -6,6 +6,7 @@ var typeLabel = ['501 Straight 1','501 Straight 2','501 Straight 3','501 Straigh
 var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     loop: true,
+    effect: 'flip',
     // Navigation arrows
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
@@ -92,26 +93,25 @@ var swiperRevit = new Swiper ('.swiper-container-revit', {
 
 
 //distress swiper late
-var swiperDistressNeedle = new Swiper ('.swiper-container-distress.needle-container', {
+var swiperDistress = new Swiper ('.swiper-container-distress', {
 	loop: true,
 	effect: 'fade',
 });
-var swiperDistressCutter = new Swiper ('.swiper-container-distress.cutter-container', {
-	loop: true,
-	effect: 'fade',
-});
-
 $('.needleB').on('click',function(){
-	console.log('ff');
-	$('.needle-container').show();
-	$('.cutter-container').hide();
-	
+	swiperDistress.removeAllSlides();
+	swiperDistress.prependSlide([
+		'<div class="swiper-slide"><img width="325" src="images/distress_1.png"></div>', 
+		'<div class="swiper-slide"><img width="325" src="images/distress_2.png"></div>',
+		'<div class="swiper-slide"><img width="325" src="images/distress_3.png"></div>'
+		]);
 });
 $('.cutterB').on('click',function(){
-	$('.needle-container').hide();
-	$('.cutter-container').show();
+	swiperDistress.removeAllSlides();
+	swiperDistress.prependSlide([
+		'<div class="swiper-slide"><img width="325" src="images/distress_4.png"></div>', 
+		'<div class="swiper-slide"><img width="325" src="images/distress_5.png"></div>'
+		]);
 });
-$('.cutter-container').hide();
 
 });
 
