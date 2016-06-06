@@ -1,4 +1,15 @@
 /*common*/
+.section-header {
+	color: #fff;
+	position: absolute;
+	text-align: right;
+    width: 200px;
+    right: 23px;
+    z-index: 2;
+}
+.section-header span {
+	font-size: 13px;
+}
 
 .swiper-container {
 	width: 100%;
@@ -8,7 +19,7 @@
 	text-align: center;
 	font-size: 18px;
 	background: #fff;
-	
+
 	/* Center slide text vertically */
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -181,20 +192,20 @@ body {
 	width: 30px;
 	border: none;
 }
-.swiper-container-color {
-	margin-top: -54px;
-}
-
 
 
 /*pants distress******************************************/
 #distress {
-	margin: 0 23px 79px;
+	width: 375px;
+	height: 612px;
+	background: url(images/distress_bg.png) no-repeat;
+	background-size: contain;
+	margin: 20px 0;
 }
 #distress h3 {
 	text-align: right;
 }
-.swipe-area {
+/*.swipe-area {
 	height: 241px;
 	width: 336px;
 	position: absolute;
@@ -237,6 +248,9 @@ body {
 .swiper-container-distress .needleB {
 	margin-right: 144px;
 }
+*/
+
+
 
 /*pants thread******************************************/
 #thread {
@@ -244,7 +258,17 @@ body {
 	margin-bottom: 59px;
 	overflow: auto;s
 }
-#thread .col1 {
+#thread .color {
+	position: absolute;
+	z-index: 10;
+	background: url(images/tcolor.png) 37px 0px no-repeat;
+	background-size: 35px 408px;
+	width: 73px;
+	height: 438px;
+	top: 186px;
+	right: 46px;	
+}
+/*#thread .col1 {
 	float: left;
 	width: 253px;
 }
@@ -255,112 +279,112 @@ body {
 	background: url(images/thread_right.png) no-repeat;
 	background-size: 122px 434px;
 	height: 440px;
-}
-#js-rangeslider-2 {
-	top: 129px;
-	left: 35px;
-	position: absolute;
-	min-height: 245px;
-}
-#js-rangeslider-2 .rangeslider__handle{
-	border: none!important;
-	height: 4px;
-	width: 60px;
-	background-color: #c60b2b;
-	border-radius: initial!important;
-}
-#js-rangeslider-2 .rangeslider__handle:after{
-	display: none;
-}
+	}*/
+	#js-rangeslider-2 {
+		top: 15px;
+		left: 35px;
+		position: absolute;
+		min-height: 383px;
+	}
+	#js-rangeslider-2 .rangeslider__handle{
+		border: none!important;
+		height: 4px;
+		width: 60px;
+		background-color: #c60b2b;
+		border-radius: initial!important;
+	}
+	#js-rangeslider-2 .rangeslider__handle:after{
+		display: none;
+	}
 
-/*pocket*/
-#pocket {
-	text-align: center;
-	position: relative;
-	overflow: auto;
-	margin-bottom: 59px;
-}
-#pocket .song {
-	border: none;
-	overflow: auto;
-	outline: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	width: 140px;
-	text-align: center;
-	height: 50px;
-}
-#pocket h3 {
-	text-align: right;
-	margin-right: 23px;
-}
-#pocket .range {
-	margin: 0 23px;
-}
-#pocket .shuffle {
-	display: block;
-	margin: 20px auto;
-}
-/*rivet*/
-#rivet {
-	position: relative;
-	overflow: auto;
-	margin-bottom: 59px
-}
-#rivet h3 {
-	text-align: right;
-	margin-right: 23px;
-}
-#rivet .boxes {
-	background-color: gray;
-	text-align: center;
-}
-#rivet .boxes div {
-	display: inline-block;
-	margin: 7px 15px 5px;
-	padding: 23px;
-}
-#rivet .box1 {
-	background-color: red;
-}
-#rivet .box2 {
-	background-color: green;
-}
-#rivet .box3 {
-	background-color: orange;
-}
-#rivet .box4 {
-	background-color: purple;
-}
+	/*pocket*/
+	#pocket {
+		text-align: center;
+		position: relative;
+		overflow: auto;
+		margin-bottom: 59px;
+	}
+	#pocket .song {
+		border: none;
+		overflow: auto;
+		outline: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		width: 140px;
+		text-align: center;
+		height: 50px;
+	}
+	#pocket h3 {
+		text-align: right;
+		margin-right: 23px;
+	}
+	#pocket .range {
+		margin: 0 23px;
+	}
+	#pocket .shuffle {
+		display: block;
+		margin: 20px auto;
+	}
+	/*rivet*/
+	#rivet {
+		position: relative;
+		overflow: auto;
+		margin-bottom: 59px
+	}
+	#rivet h3 {
+		text-align: right;
+		margin-right: 23px;
+	}
+	#rivet .boxes {
+		background-color: gray;
+		text-align: center;
+	}
+	#rivet .boxes div {
+		display: inline-block;
+		margin: 7px 15px 5px;
+		padding: 23px;
+	}
+	#rivet .box1 {
+		background-color: red;
+	}
+	#rivet .box2 {
+		background-color: green;
+	}
+	#rivet .box3 {
+		background-color: orange;
+	}
+	#rivet .box4 {
+		background-color: purple;
+	}
 
-/*m3*/
-#m3 {
+	/*m3*/
+	#m3 {
 
-}
+	}
 
-#m3 h3 {
-	text-align: right;
-	margin-right: 23px;
-}
+	#m3 h3 {
+		text-align: right;
+		margin-right: 23px;
+	}
 
-/*tab*/
-#tab {
+	/*tab*/
+	#tab {
 
-}
-#tab h3 {
-	text-align: right;
-	margin-right: 23px;
-}
+	}
+	#tab h3 {
+		text-align: right;
+		margin-right: 23px;
+	}
 
-/*final*/
-#final {
+	/*final*/
+	#final {
 
-}
-#final h3 {
-	text-align: right;
-	margin-right: 23px;
-}
+	}
+	#final h3 {
+		text-align: right;
+		margin-right: 23px;
+	}
 
 
 
