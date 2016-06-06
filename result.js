@@ -26,7 +26,12 @@ var swiperThread = new Swiper ('.swiper-container-thread', {
 	effect: 'fade',
 });
 
-var swiperColor = new Swiper ('.swiper-container-color', {
+// var swiperColor = new Swiper ('.swiper-container-color', {
+// 	loop: true,
+// 	effect: 'fade',
+// });
+
+var swiperColorB = new Swiper ('.swiper-container-color-b', {
 	loop: true,
 	effect: 'fade',
 });
@@ -99,10 +104,10 @@ $('.cutterB').on('click',function(){
 
 //color thread
 $('#range-bright').rangeslider({polyfill: false}).on('input', function() {
-	swiperColor.slideNext();
+	swiperColorB.slideNext();
 });
 $('#range-fade').rangeslider({polyfill: false}).on('input', function() {
-	swiperColor.slidePrev();
+	swiperColorB.slidePrev();
 });
 $('#range-thread').rangeslider({polyfill: false}).on('input', function() {
 	swiperThread.slideNext();

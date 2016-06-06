@@ -92,9 +92,9 @@ body {
 }
 .sticky-pants {
 	margin-left: 21px;
-	z-index: 10;
+	z-index: 20;
 	position: absolute;
-
+	margin-top: 72px;
 }
 .sticky-pants img {
 	margin-top: 20px;
@@ -107,8 +107,15 @@ body {
 }
 
 /*pants color******************************************/
+.color-b {
+	position: relative;
+}
 #color {
 	margin: 0 23px 0;
+	position: absolute;
+	top: 416px;
+	z-index: 10;
+	color: #fff;
 }
 #color h3 {
 	text-align: right;
