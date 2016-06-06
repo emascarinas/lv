@@ -166,12 +166,23 @@ body {
 .cutter-2 {
 	background-image: url(images/distress_5.png);
 }
+.swiper-container-distress {
+	position: relative;
+}
+.swiper-container-distress .controls {
+	position: absolute;
+	z-index: 10;
+	bottom: 1px;
+}
+.swiper-container-distress .needleB {
+	margin-right: 144px;
+}
 
 /*pants thread******************************************/
 #thread {
 	position: relative;
 	margin-bottom: 59px;
-	overflow: auto;
+	overflow: auto;s
 }
 #thread .col1 {
 	float: left;
@@ -205,6 +216,9 @@ body {
 /*pocket*/
 #pocket {
 	text-align: center;
+	position: relative;
+	overflow: auto;
+	margin-bottom: 59px;
 }
 #pocket .song {
 	border: none;
@@ -230,11 +244,34 @@ body {
 }
 /*rivet*/
 #rivet {
-
+	position: relative;
+	overflow: auto;
+	margin-bottom: 59px
 }
 #rivet h3 {
 	text-align: right;
 	margin-right: 23px;
+}
+#rivet .boxes {
+	background-color: gray;
+	text-align: center;
+}
+#rivet .boxes div {
+	display: inline-block;
+	margin: 7px 15px 5px;
+	padding: 23px;
+}
+#rivet .box1 {
+	background-color: red;
+}
+#rivet .box2 {
+	background-color: green;
+}
+#rivet .box3 {
+	background-color: orange;
+}
+#rivet .box4 {
+	background-color: purple;
 }
 
 /*m3*/

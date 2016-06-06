@@ -85,9 +85,33 @@ $('#range-thread').rangeslider({polyfill: false}).on('input', function() {
 $('#range-pocket').rangeslider({polyfill: false}).on('input', function() {
 	console.log(this.value);
 });
+var swiperRevit = new Swiper ('.swiper-container-revit', {
+	loop: true,
+	effect: 'fade',
+});
 
 
+//distress swiper late
+var swiperDistressNeedle = new Swiper ('.swiper-container-distress.needle-container', {
+	loop: true,
+	effect: 'fade',
+});
+var swiperDistressCutter = new Swiper ('.swiper-container-distress.cutter-container', {
+	loop: true,
+	effect: 'fade',
+});
 
+$('.needleB').on('click',function(){
+	console.log('ff');
+	$('.needle-container').show();
+	$('.cutter-container').hide();
+	
+});
+$('.cutterB').on('click',function(){
+	$('.needle-container').hide();
+	$('.cutter-container').show();
+});
+$('.cutter-container').hide();
 
 });
 
