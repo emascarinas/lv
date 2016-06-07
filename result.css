@@ -75,11 +75,28 @@ body {
 	padding: 0;
 }
 #result {
-	margin-top: 15px;
+	
 }
 .logo-white {
-	padding-bottom: 15px;
-	text-align: center;
+	position: relative;
+	overflow: auto;
+	width: 375px;
+	height: 631px;
+	background: url(images/head_bg.png) no-repeat;
+	background-size: contain;
+}
+.logo-white .head-gif {
+	position: absolute;
+	top: 117px;
+	left: 137px;
+}
+.logo-white .click-checkout {
+	position: absolute;
+    top: 489px;
+    left: 24px;
+    display: block;
+    height: 62px;
+    width: 327px;
 }
 .gray-line {
 	background-color: #bfbfbf;
@@ -120,118 +137,119 @@ body {
 .head a:nth-child(1) {
 	left: 17px;
 }
-.swiper-container-head{
+/*.swiper-container-head{
 	width: 375px;
 	max-width: 375px;
-}
+	}*/
 
-/*pants slider******************************************/
-.swiper-container {
-	width: 375px;
-	height: 400px;
-} 
-.swiper-slide {
-	text-align: center;
-}
-.swiper-button-prev {
-	height: 60px!important;
-	width: 41px!important;
-	background-image: url(images/prev.png)!important;
-	background-size: 41px 60px!important;
-}
-.swiper-button-next {
-	height: 60px!important;
-	width: 41px!important;
-	background-image: url(images/next.png)!important;
-	background-size: 41px 60px!important;
-}
-.sticky-pants {
-	margin-left: 21px;
-	z-index: 20;
-	position: absolute;
-	margin-top: 72px;
-}
-.sticky-pants img {
-	margin-top: 20px;
-}
-#type {
-	overflow: auto;
-	/*margin-bottom: 70px;*/
-}
-.type-label {
-	text-align: center;
-}
+	/*pants slider******************************************/
+	.swiper-container {
+		width: 375px;
+		height: 400px;
+	} 
+	.swiper-slide {
+		text-align: center;
+	}
+	.swiper-button-prev {
+		height: 60px!important;
+		width: 41px!important;
+		background-image: url(images/prev.png)!important;
+		background-size: 41px 60px!important;
+	}
+	.swiper-button-next {
+		height: 60px!important;
+		width: 41px!important;
+		background-image: url(images/next.png)!important;
+		background-size: 41px 60px!important;
+	}
+	.sticky-pants {
+		margin-left: 21px;
+		z-index: 20;
+		position: absolute;
+		margin-top: 72px;
+	}
+	.sticky-pants img {
+		margin-top: 20px;
+	}
+	#type {
+		overflow: auto;
+		/*margin-bottom: 70px;*/
+	}
+	.type-label {
+		text-align: center;
+	}
 
-/*pants color******************************************/
-.color-b {
-	position: relative;
-	overflow: auto;
-}
-#color {
-	margin: 0 23px 0;
-	position: absolute;
-	top: 416px;
-	z-index: 10;
-	color: #fff;
-}
-#color .section-header {
-	top: -293px;
-	right: 0;
-}
-#color h3 {
-	text-align: right;
-}
+	/*pants color******************************************/
+	.color-b {
+		position: relative;
+		overflow: auto;
+	}
+	#color {
+		margin: 0 23px 0;
+		position: absolute;
+		top: 416px;
+		z-index: 10;
+		color: #fff;
+	}
+	#color .section-header {
+		top: -293px;
+		right: 0;
+	}
+	#color h3 {
+		text-align: right;
+	}
 
-.range {
-	background-color: #252525;
-	padding: 20px 0 20px 22px;
-	position: relative;
-}
-.rcircle {
-	width: 10px;
-	height: 10px;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 20px;
-	background: #959595;
-	display: inline-block;
-	margin-right: 20px;
-}
-.red-line {
-	margin: 50px 0;
-	background-color: #ff5555;
-}
+	.range {
+		background-color: #252525;
+		padding: 20px 0 20px 22px;
+		position: relative;
+	}
+	.rcircle {
+		width: 10px;
+		height: 10px;
+		-moz-border-radius: 50px;
+		-webkit-border-radius: 50px;
+		border-radius: 20px;
+		background: #959595;
+		display: inline-block;
+		margin-right: 20px;
+	}
+	.red-line {
+		margin: 50px 0;
+		background-color: #ff5555;
+	}
 
-#js-rangeslider-0, #js-rangeslider-1, #js-rangeslider-3 {
-	top: 23px;
-	left: 10px;
-	position: absolute;
-	max-width: 308px;
-}
-#js-rangeslider-0 .rangeslider__handle, #js-rangeslider-1 .rangeslider__handle, #js-rangeslider-3 .rangeslider__handle {
-	height: 30px;
-	width: 30px;
-	border: none;
-}
+	#js-rangeslider-0, #js-rangeslider-1, #js-rangeslider-3 {
+		top: 23px;
+		left: 10px;
+		position: absolute;
+		max-width: 308px;
+	}
+	#js-rangeslider-0 .rangeslider__handle, #js-rangeslider-1 .rangeslider__handle, #js-rangeslider-3 .rangeslider__handle {
+		height: 30px;
+		width: 30px;
+		border: none;
+	}
 
 
-/*pants distress******************************************/
-#distress {
-	overflow: auto;
-	width: 375px;
-	height: 612px;
-	background: url(images/distress_bg.png) no-repeat;
-	background-size: contain;
-	margin: 10px 0;
-}
-#distress h3 {
-	text-align: right;
-}
-.swiper-container-distress {
-	width: 325px;
-	height: 325px;
-	margin: 159px 0 0 24px;
-}
+	/*pants distress******************************************/
+	#distress {
+		overflow: auto;
+		width: 375px;
+		height: 612px;
+		background: url(images/distress_bg.png) no-repeat;
+		background-size: contain;
+		margin: 10px 0;
+		position: relative;
+	}
+	#distress h3 {
+		text-align: right;
+	}
+	.swiper-container-distress {
+		width: 325px;
+		height: 325px;
+		margin: 159px 0 0 24px;
+	}
 /*.swipe-area {
 	height: 241px;
 	width: 336px;

@@ -3,10 +3,6 @@ $(function() {
 
 // head slider
 
-var swiper = new Swiper('.swiper-container-head', {
-        slidesPerView: 4,
-        spaceBetween: 30
-    });
 
 //pants slider swiper
 var typeLabel = ['501 Straight 1','501 Straight 2','501 Straight 3','501 Straight 1'];
