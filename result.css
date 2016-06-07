@@ -1,4 +1,8 @@
 /*common*/
+body, #result {
+	width: 375px;
+	max-width: 375px;
+}
 .section-header {
 	color: #fff;
 	position: absolute;
@@ -118,6 +122,7 @@ body {
 }
 .swiper-container-head{
 	width: 375px;
+	max-width: 375px;
 }
 
 /*pants slider******************************************/
@@ -158,12 +163,6 @@ body {
 }
 
 /*pants color******************************************/
-#pocket {
-	background: url(images/pocket_bg.png) no-repeat;
-	width: 375px;
-	height: 613px;
-	background-size: contain;
-}
 .color-b {
 	position: relative;
 	overflow: auto;
@@ -331,7 +330,16 @@ body {
 		text-align: center;
 		position: relative;
 		overflow: auto;
-		margin-bottom: 59px;
+		margin-bottom: 10px;
+		background: url(images/pocket_bg.png) no-repeat;
+		width: 375px;
+		height: 613px;
+		background-size: contain;
+	}
+	#pocket h4 {
+		color: #fff;
+		text-align: left;
+		margin-left: 23px;
 	}
 	#pocket .song {
 		border: none;
@@ -340,9 +348,17 @@ body {
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
 		box-shadow: none;
-		width: 140px;
+		width: 209px;
 		text-align: center;
-		height: 50px;
+		height: 117px;
+		background-color: transparent;
+		color: #fff;
+		text-decoration: underline;
+		font-size: 19px;
+		font-weight: 100;
+		margin-top: 32px;
+		letter-spacing: 4px;
+		text-transform: uppercase;
 	}
 	#pocket .section-header {
 		position: relative;
@@ -353,65 +369,65 @@ body {
 	#pocket .shuffle {
 		display: block;
 		margin: 20px auto;
+		background-color: #252525;
+		width: 329px;
+		margin-top: 84px;
+
 	}
 	/*rivet*/
-	#rivet {
+	#button {
 		position: relative;
 		overflow: auto;
-		margin-bottom: 59px
-	}
-	#rivet h3 {
-		text-align: right;
-		margin-right: 23px;
-	}
-	#rivet .boxes {
-		background-color: gray;
-		text-align: center;
-	}
-	#rivet .boxes div {
-		display: inline-block;
-		margin: 7px 15px 5px;
-		padding: 23px;
-	}
-	#rivet .box1 {
-		background-color: red;
-	}
-	#rivet .box2 {
-		background-color: green;
-	}
-	#rivet .box3 {
-		background-color: orange;
-	}
-	#rivet .box4 {
-		background-color: purple;
-	}
+		margin-bottom: 10px;
+		width: 375px;
+		height: 612px;
+		background: url(images/button_bg.png) no-repeat;
+		background-size: contain;
 
+	}
 	/*m3*/
 	#m3 {
-
-	}
-
-	#m3 h3 {
-		text-align: right;
-		margin-right: 23px;
+		position: relative;
+		overflow: auto;
+		margin-bottom: 10px;
+		width: 375px;
+		height: 613px;
+		background: url(images/3m_bg.png) no-repeat;
+		background-size: contain;
 	}
 
 	/*tab*/
 	#tab {
-
-	}
-	#tab h3 {
-		text-align: right;
-		margin-right: 23px;
+		position: relative;
+		overflow: auto;
+		margin-bottom: 10px;
+		width: 375px;
+		height: 625px;
+		background: url(images/tab_bg.png) no-repeat;
+		background-size: contain;		
 	}
 
 	/*final*/
 	#final {
-
+		position: relative;
+		overflow: auto;
+		text-align: center;
+		margin-bottom: 40px;
 	}
-	#final h3 {
-		text-align: right;
-		margin-right: 23px;
+	#final h4 {
+		font-size: 12px;
+	}
+	#final h4 span {
+		color: #c60b2b;
+	}
+	#final p {
+		font-size: 12px;
+		font-weight: 100;
+	}
+	#final a {
+		color: #000;
+		font-size: 13px;
+		display: block;
 	}
 
 
