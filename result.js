@@ -7,14 +7,14 @@ $(function() {
 //pants slider swiper
 var typeLabel = ['501 Straight 1','501 Straight 2','501 Straight 3','501 Straight 1'];
 var mySwiper = new Swiper ('.swiper-container', {
-    loop: true,
-    effect: 'flip',
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    onSlideChangeEnd : function(swiperHere) {
-    	var index = parseInt($('.swiper-wrapper .swiper-slide-active').data('swiper-slide-index'));
-    	$('.type-label').text(typeLabel[index]);
-    },
+	loop: true,
+	effect: 'flip',
+	nextButton: '.swiper-button-next',
+	prevButton: '.swiper-button-prev',
+	onSlideChangeEnd : function(swiperHere) {
+		var index = parseInt($('.swiper-wrapper .swiper-slide-active').data('swiper-slide-index'));
+		$('.type-label').text(typeLabel[index]);
+	},
 });
 
 var swiperColorB = new Swiper ('.swiper-container-color-b', {
@@ -128,6 +128,25 @@ $(".button-clicks a").on("click", function(event){
 	event.preventDefault();
 	swiperButton.slideTo($(this).data("index"));
 });
+
+//3m
+
+var swiperM3 = new Swiper ('.swiper-container-m3', {
+	loop: true,
+	effect: 'fade'
+});
+var active = true;
+$(".m3-text").on("click", function(event){
+	swiperM3.slideNext();
+	active = !active;
+	if(active) {
+		$(this).html('DOUBLE TAP <br> TO DE-ACTIVATE');
+	}else {
+		$(this).html('DOUBLE TAP <br> TO ACTIVATE');
+
+	}
+});
+
 
 
 

@@ -424,6 +424,18 @@ body {
 		background: url(images/3m_bg.png) no-repeat;
 		background-size: contain;
 	}
+	.swiper-container-m3 {
+		margin-top: 451px;
+	}
+	.m3-text {
+		color: #fff;
+		font-weight: 100;
+		letter-spacing: 5px;
+		text-align: center;
+		top: 300px;
+		position: absolute;
+		width: 375px;
+	}
 
 	/*tab*/
 	#tab {
