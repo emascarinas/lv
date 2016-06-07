@@ -3,12 +3,22 @@
 	color: #fff;
 	position: absolute;
 	text-align: right;
-    width: 200px;
-    right: 23px;
-    z-index: 2;
+	right: 23px;
+	z-index: 2;
+	margin-bottom: 20px;
 }
 .section-header span {
 	font-size: 13px;
+	display: block;
+	width: 200px;
+	float: right;
+}
+.section-header:after {
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
 }
 
 .swiper-container {
@@ -140,6 +150,7 @@ body {
 	margin-top: 20px;
 }
 #type {
+	overflow: auto;
 	/*margin-bottom: 70px;*/
 }
 .type-label {
@@ -147,8 +158,15 @@ body {
 }
 
 /*pants color******************************************/
+#pocket {
+	background: url(images/pocket_bg.png) no-repeat;
+	width: 375px;
+	height: 613px;
+	background-size: contain;
+}
 .color-b {
 	position: relative;
+	overflow: auto;
 }
 #color {
 	margin: 0 23px 0;
@@ -156,6 +174,10 @@ body {
 	top: 416px;
 	z-index: 10;
 	color: #fff;
+}
+#color .section-header {
+	top: -293px;
+	right: 0;
 }
 #color h3 {
 	text-align: right;
@@ -196,14 +218,20 @@ body {
 
 /*pants distress******************************************/
 #distress {
+	overflow: auto;
 	width: 375px;
 	height: 612px;
 	background: url(images/distress_bg.png) no-repeat;
 	background-size: contain;
-	margin: 20px 0;
+	margin: 10px 0;
 }
 #distress h3 {
 	text-align: right;
+}
+.swiper-container-distress {
+	width: 325px;
+	height: 325px;
+	margin: 159px 0 0 24px;
 }
 /*.swipe-area {
 	height: 241px;
@@ -255,7 +283,7 @@ body {
 /*pants thread******************************************/
 #thread {
 	position: relative;
-	margin-bottom: 59px;
+	margin-bottom: 10px;
 	overflow: auto;s
 }
 #thread .color {
@@ -288,13 +316,14 @@ body {
 	}
 	#js-rangeslider-2 .rangeslider__handle{
 		border: none!important;
-		height: 4px;
-		width: 60px;
-		background-color: #c60b2b;
-		border-radius: initial!important;
+		height: 40px;
+		width: 40px;
+		left: -1px;
+		/*background-color: #c60b2b;*/
+		/*border-radius: initial!important;*/
 	}
 	#js-rangeslider-2 .rangeslider__handle:after{
-		display: none;
+		/*display: none;*/
 	}
 
 	/*pocket*/
@@ -315,9 +344,8 @@ body {
 		text-align: center;
 		height: 50px;
 	}
-	#pocket h3 {
-		text-align: right;
-		margin-right: 23px;
+	#pocket .section-header {
+		position: relative;
 	}
 	#pocket .range {
 		margin: 0 23px;

@@ -30,6 +30,11 @@ var swiperColorB = new Swiper ('.swiper-container-color-b', {
 $(".sticky-pants").stick_in_parent({parent: '#result'});
 
 // distress
+var swiperDistress = new Swiper ('.swiper-container-distress', {
+	loop: true,
+	effect: 'fade',
+});
+
 
 
 // var isNeedle = true;
@@ -74,10 +79,6 @@ $(".sticky-pants").stick_in_parent({parent: '#result'});
 // 	}
 // });
 
-// var swiperDistress = new Swiper ('.swiper-container-distress', {
-// 	loop: true,
-// 	effect: 'fade',
-// });
 // $('.needleB').on('click',function(){
 // 	swiperDistress.removeAllSlides();
 // 	swiperDistress.prependSlide([
