@@ -109,14 +109,26 @@ $('#range-thread').rangeslider({polyfill: false}).on('input', function() {
 });
 
 //pocket
+var swiperPocket = new Swiper ('.swiper-container-pocket', {
+	loop: true,
+	effect: 'fade'
+});
 
 $('#range-pocket').rangeslider({polyfill: false}).on('input', function() {
-	console.log(this.value);
+	swiperPocket.slideNext();
 });
-var swiperRevit = new Swiper ('.swiper-container-revit', {
+
+// button
+
+var swiperButton = new Swiper ('.swiper-container-button', {
 	loop: true,
-	effect: 'fade',
+	effect: 'fade'
 });
+$(".button-clicks a").on("click", function(event){
+	event.preventDefault();
+	swiperButton.slideTo($(this).data("index"));
+});
+
 
 
 });

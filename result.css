@@ -92,11 +92,11 @@ body {
 }
 .logo-white .click-checkout {
 	position: absolute;
-    top: 489px;
-    left: 24px;
-    display: block;
-    height: 62px;
-    width: 327px;
+	top: 489px;
+	left: 24px;
+	display: block;
+	height: 62px;
+	width: 327px;
 }
 .gray-line {
 	background-color: #bfbfbf;
@@ -349,15 +349,13 @@ body {
 		position: relative;
 		overflow: auto;
 		margin-bottom: 10px;
-		background: url(images/pocket_bg.png) no-repeat;
-		width: 375px;
-		height: 613px;
-		background-size: contain;
 	}
 	#pocket h4 {
 		color: #fff;
 		text-align: left;
 		margin-left: 23px;
+		margin-top: 326px;
+
 	}
 	#pocket .song {
 		border: none;
@@ -378,9 +376,6 @@ body {
 		letter-spacing: 4px;
 		text-transform: uppercase;
 	}
-	#pocket .section-header {
-		position: relative;
-	}
 	#pocket .range {
 		margin: 0 23px;
 	}
@@ -392,6 +387,12 @@ body {
 		margin-top: 84px;
 
 	}
+	.pocket-content {
+		position: absolute;
+		z-index: 1;
+		top: 152px;
+		left: 0;
+	}
 	/*rivet*/
 	#button {
 		position: relative;
@@ -401,6 +402,16 @@ body {
 		height: 612px;
 		background: url(images/button_bg.png) no-repeat;
 		background-size: contain;
+
+	}
+	.button-clicks {
+		margin: 22px 1px 0 29px;
+	}
+	.button-clicks a {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		margin: 24px 28px 0 0;
 
 	}
 	/*m3*/
