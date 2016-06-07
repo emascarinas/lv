@@ -166,7 +166,7 @@ body {
 		margin-left: 21px;
 		z-index: 20;
 		position: absolute;
-		margin-top: 72px;
+		margin-top: 35px;
 	}
 	.sticky-pants img {
 		margin-top: 20px;
@@ -192,7 +192,7 @@ body {
 		color: #fff;
 	}
 	#color .section-header {
-		top: -293px;
+		top: -377px;
 		right: 0;
 	}
 	#color h3 {
