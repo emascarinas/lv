@@ -147,7 +147,11 @@ $(".m3-text").on("click", function(event){
 	}
 });
 
+//tab
 
+$('#tab .edit').focusout(function() {
+	$('#tab > span > span:nth-child(2)').text($(this).val());
+});
 
 
 });
