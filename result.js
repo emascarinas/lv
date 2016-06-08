@@ -2,7 +2,16 @@
 $(function() {
 
 // head slider
+var showModal = false;
+$(".modal-click").on("click", function(event){
+	event.preventDefault();
+	if(showModal)
+		$('.modal').show()
+	else
+		$('.modal').hide()
+	showModal = !showModal;
 
+});
 
 //pants slider swiper
 var typeLabel = ['501 Straight 1','501 Straight 2','501 Straight 3','501 Straight 1'];
