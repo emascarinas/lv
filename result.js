@@ -145,9 +145,9 @@ $(".m3-text").on("click", function(event){
 	swiperM3.slideNext();
 	active = !active;
 	if(active) {
-		$(this).html('DOUBLE TAP <br> TO DE-ACTIVATE');
+		$(this).html('TAP TO DE-ACTIVATE');
 	}else {
-		$(this).html('DOUBLE TAP <br> TO ACTIVATE');
+		$(this).html('TAP TO ACTIVATE');
 
 	}
 });
