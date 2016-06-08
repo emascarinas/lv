@@ -30,7 +30,7 @@ $('.social li').on('click',function(event){
 });
 
 $('.analyzebutton').on("click",function(){
-	window.location.href = "result.html";	
+	window.location.href = "analyze.html";	
 });
 function initSocial(){
 	$( ".social li" ).each(function( index ) {
