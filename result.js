@@ -163,6 +163,20 @@ $('#tab .edit').focusout(function() {
 
 });
 
+//final
+
+var showPay = true;
+$(".pay").on("click", function(event){
+	event.preventDefault();
+	if(showPay)
+		$('.paysheet').show()
+	else
+		$('.paysheet').hide()
+	showPay = !showPay;
+
+});
+
+
 
 //helper functions
 
