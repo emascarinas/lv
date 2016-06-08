@@ -143,10 +143,14 @@ body {
 	}*/
 
 	/*pants slider******************************************/
-	.swiper-container {
+
+/*	.swiper-container {
 		width: 375px;
 		height: 400px;
-	} 
+	} */
+	.swiper-container-type {
+		margin-bottom: 10px;
+	}
 	.swiper-slide {
 		text-align: center;
 	}

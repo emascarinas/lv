@@ -6,15 +6,13 @@ $(function() {
 
 //pants slider swiper
 var typeLabel = ['501 Straight 1','501 Straight 2','501 Straight 3','501 Straight 1'];
-var mySwiper = new Swiper ('.swiper-container', {
+var mySwiper = new Swiper ('.swiper-container-type', {
 	loop: true,
 	effect: 'flip',
-	nextButton: '.swiper-button-next',
-	prevButton: '.swiper-button-prev',
-	onSlideChangeEnd : function(swiperHere) {
-		var index = parseInt($('.swiper-wrapper .swiper-slide-active').data('swiper-slide-index'));
-		$('.type-label').text(typeLabel[index]);
-	},
+	// onSlideChangeEnd : function(swiperHere) {
+	// 	var index = parseInt($('.swiper-wrapper .swiper-slide-active').data('swiper-slide-index'));
+	// 	$('.type-label').text(typeLabel[index]);
+	// },
 });
 
 var swiperColorB = new Swiper ('.swiper-container-color-b', {
@@ -155,13 +153,6 @@ $('#tab .edit').focusout(function() {
 
 
 });
-
-
-
-
-
-
-
 
 
 //helper functions

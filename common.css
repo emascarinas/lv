@@ -1,3 +1,8 @@
+body {
+	width: 375px;
+	max-width: 375px;
+	margin: 0 auto;
+}
 .logo-white {
 	padding-bottom: 15px;
 	text-align: center;
