@@ -26,7 +26,9 @@ body {
 	padding-top: 401px;
 }
 #home > p {
-	/*margin-top: 50px;*/
+	font-size: 14px;
+    margin: 0 37px 73px!important;
+    line-height: 22px;
 }
 #home img {
 	display: block;
