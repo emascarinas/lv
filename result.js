@@ -24,7 +24,6 @@ var mySwiper = new Swiper ('.swiper-container-type', {
 });
 
 var swiperColorB = new Swiper ('.swiper-container-color-b', {
-	loop: true,
 	effect: 'fade',
 });
 
@@ -104,10 +103,10 @@ var swiperThread = new Swiper ('.swiper-container-thread-b', {
 });
 
 $('#range-bright').rangeslider({polyfill: false}).on('input', function() {
-	swiperColorB.slideNext();
+	swiperColorB.slideTo(this.value);
 });
 $('#range-fade').rangeslider({polyfill: false}).on('input', function() {
-	swiperColorB.slidePrev();
+	swiperColorB.slideTo(this.value);
 });
 $('#range-thread').rangeslider({polyfill: false}).on('input', function() {
 	console.log(Math.round((this.value/100)*10));
