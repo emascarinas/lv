@@ -2,7 +2,7 @@
 $(function() {
 
 // head slider
-var showModal = false;
+var showModal = true;
 $(".modal-click").on("click", function(event){
 	event.preventDefault();
 	if(showModal)
