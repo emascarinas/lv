@@ -152,7 +152,10 @@ body {
     top: 61px;
     right: 11px;
 }
-
+.head-stick {
+	position: fixed;
+	z-index: 999999;
+}
 
 /*pants slider******************************************/
 
