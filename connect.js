@@ -11,7 +11,7 @@ var rate_arr = [
 console.log(rate_arr);
 initSocial();
 $('.social li').on('click',function(event){
-	initSocial();
+	//initSocial();
 	var index = $('.social li').index(this);
 	var classOn = 'social-' + (parseInt(index) + 1) + '-on';
 	var classOff = 'social-' + (parseInt(index) + 1) + '-off';  
