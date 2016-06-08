@@ -17,7 +17,6 @@ $(".modal-click").on("click", function(event){
 var typeLabel = ['501 Straight 1','501 Straight 2','501 Straight 3','501 Straight 1'];
 var mySwiper = new Swiper ('.swiper-container-type', {
 	loop: true,
-	effect: 'flip',
 	// onSlideChangeEnd : function(swiperHere) {
 	// 	var index = parseInt($('.swiper-wrapper .swiper-slide-active').data('swiper-slide-index'));
 	// 	$('.type-label').text(typeLabel[index]);

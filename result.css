@@ -169,6 +169,7 @@ body {
 
 .swiper-container-type {
 	margin-bottom: 10px;
+	overflow: hidden;
 }
 .swiper-slide {
 	text-align: center;
