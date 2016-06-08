@@ -15,9 +15,18 @@ body {
 
 /*home****************************/
 #home{
-	padding-top: 86px;
+	/*padding-top: 86px;
 	text-align: center;
-	background-color: #000;
+	background-color: #000;*/
+	background: url(images/home_bg.jpg) no-repeat;
+	background-size: contain;
+	width: 375px;
+	height: 639px;
+	text-align: center;
+	padding-top: 401px;
+}
+#home > p {
+	/*margin-top: 50px;*/
 }
 #home img {
 	display: block;
