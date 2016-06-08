@@ -3,10 +3,10 @@ $(function() {
 // connect
 var social_arr = [];
 var rate_arr = [
-["POOR",1],
+["FAIR",1],
 ["OKAY",1],
 ["GOOD",5],
-["EXCELENT",7]
+["EXCELLENT",7]
 ];
 console.log(rate_arr);
 initSocial();
