@@ -28,7 +28,7 @@ var swiperColorB = new Swiper ('.swiper-container-color-b', {
 });
 
 // sticky pants
-// $(".sticky-pants").stick_in_parent({parent: '#result'});
+$(".sticky-pants").stick_in_parent({parent: '#result'});
 
 // distress
 var swiperDistress = new Swiper ('.swiper-container-distress', {
